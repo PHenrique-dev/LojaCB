@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import App from './App';
+import { createRoot } from 'react-dom/client';
 import { Auth0Provider } from '@auth0/auth0-react';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = createRoot(document.getElementById('root'));root.render(
   <Auth0Provider
     domain="dev-phiga.us.auth0.com"
     clientId="jiTULAN68BKm449mEYhAOt5Abb9HRVAy"
@@ -14,7 +13,7 @@ root.render(
     }}
   >
     <App />
-  </Auth0Provider>
+  </Auth0Provider>,
 );
 
 // If you want to start measuring performance in your app, pass a function

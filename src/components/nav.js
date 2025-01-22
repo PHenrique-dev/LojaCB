@@ -4,7 +4,7 @@ import { MdLocalShipping } from "react-icons/md";
 import { useAuth0 } from "@auth0/auth0-react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { FiLogIn } from "react-icons/fi";
-const Nav= () => {
+const Nav = () => {
   const { loginWithRedirect } = useAuth0();
   return (
     <>
